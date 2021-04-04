@@ -3,7 +3,8 @@
 
 const names = require('./4.names.js')
 const sayHi = require('./5-utils')
-
-sayHi('Rish')
-sayHi(names.jhon)
-sayHi(names.peter)
+const data = require('./6-alternative-flavour')
+require('./7-min-grinade')
+// sayHi('Rish')
+// sayHi(names.jhon)
+// sayHi(names.peter)
