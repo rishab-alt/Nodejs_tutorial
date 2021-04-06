@@ -1,0 +1,10 @@
+//Module - Ecapsulated Code (only share minimum)
+//CommonJS, every file is module (by default)
+
+const names = require('./4.names.js')
+const sayHi = require('./5-utils')
+const data = require('./6-alternative-flavour')
+require('./7-min-grinade')
+// sayHi('Rish')
+// sayHi(names.jhon)
+// sayHi(names.peter)
