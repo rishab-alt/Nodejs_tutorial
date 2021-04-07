@@ -4,7 +4,7 @@
   "description": "Just a Nodejs that im lm Learning!",
   "main": "1-intro.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "nodemon app.js"
   },
   "repository": {
     "type": "git",
@@ -18,7 +18,9 @@
   },
   "homepage": "https://github.com/rishab-alt/Nodejs_tutorial#readme",
   "dependencies": {
-    "bootstrap": "^4.6.0",
     "lodash": "^4.17.21"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.7"
   }
 }

@@ -1,29 +1,21 @@
-const { readFile, writeFile } = require('fs')
+const http = require('http')
 
-console.log('start')
-readFile('./content/subfolder/first.txt', 'utf8', (err, result) => {
-  if (err) {
-    console.log(err)
-    return
+const server = http.createServer((req, res) => {
+  if (req.url === '/') {
+    res.end('Home Page')
   }
-  const first = result
-  readFile('./content/subfolder/second.txt', 'utf8', (err, result) => {
-    if (err) {
-      console.log(err)
-      return
-    }
-    const second = result
-    writeFile(
-      './content/subfolder/result-async.txt',
-      `Here is the result : ${first}, ${second}`,
-      (err, result) => {
-        if (err) {
-          console.log(err)
-          return
-        }
-        console.log('done with this task')
+  if (req.url === '/about') {
+    // blocking code
+    for (let i = 0; i < 1000; i++) {
+      for (let j = 0; j < 1000; j++) {
+        console.log(`${i} ${j}`)
       }
-    )
-  })
+    }
+    res.end('About Page')
+  }
+  res.end('Error Page')
 })
-console.log('starting next task')
+
+server.listen(5000, () => {
+  console.log('Server listening on port : 5000....')
+})
