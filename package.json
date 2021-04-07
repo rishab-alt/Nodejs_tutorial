@@ -1,0 +1,24 @@
+{
+  "name": "Tutorial",
+  "version": "1.0.0",
+  "description": "Just a Nodejs that im lm Learning!",
+  "main": "1-intro.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/rishab-alt/Nodejs_tutorial.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/rishab-alt/Nodejs_tutorial/issues"
+  },
+  "homepage": "https://github.com/rishab-alt/Nodejs_tutorial#readme",
+  "dependencies": {
+    "bootstrap": "^4.6.0",
+    "lodash": "^4.17.21"
+  }
+}
